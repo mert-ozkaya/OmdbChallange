@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0937C59325E4436800F324D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C59225E4436800F324D4 /* AppDelegate.swift */; };
-		0937C59525E4436800F324D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C59425E4436800F324D4 /* SceneDelegate.swift */; };
-		0937C59725E4436800F324D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C59625E4436800F324D4 /* ViewController.swift */; };
 		0937C59A25E4436800F324D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0937C59825E4436800F324D4 /* Main.storyboard */; };
 		0937C59C25E4436A00F324D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0937C59B25E4436A00F324D4 /* Assets.xcassets */; };
 		0937C59F25E4436A00F324D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0937C59D25E4436A00F324D4 /* LaunchScreen.storyboard */; };
+		0937C5B325E446EF00F324D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0937C5B225E446EF00F324D4 /* Localizable.strings */; };
+		0937C5B825E4473100F324D4 /* UIStoryboard+ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5B725E4473100F324D4 /* UIStoryboard+ViewControllers.swift */; };
+		0937C5BB25E4476300F324D4 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5BA25E4476300F324D4 /* UIView+Inspectables.swift */; };
+		0937C5BE25E4477E00F324D4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5BD25E4477E00F324D4 /* Font.swift */; };
+		0937C5C125E447A400F324D4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5C025E447A400F324D4 /* UIColor+Extension.swift */; };
+		0937C5C425E447C000F324D4 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5C325E447C000F324D4 /* URL+Extensions.swift */; };
+		0937C5C725E447E300F324D4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5C625E447E300F324D4 /* String+Extensions.swift */; };
+		0937C5CF25E44AA600F324D4 /* StartingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5CE25E44AA600F324D4 /* StartingApp.swift */; };
+		0937C5D525E44FA100F324D4 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5D425E44FA100F324D4 /* UILabel+Extensions.swift */; };
+		0937C5D925E44FDA00F324D4 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5D825E44FDA00F324D4 /* SplashVC.swift */; };
+		0937C5DC25E4502C00F324D4 /* SearchManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5DB25E4502C00F324D4 /* SearchManagementVC.swift */; };
+		0937C5DF25E452B000F324D4 /* AlamofireErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5DE25E452B000F324D4 /* AlamofireErrorHandler.swift */; };
+		0937C5E225E452E700F324D4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5E125E452E700F324D4 /* SearchResult.swift */; };
+		0937C5E525E4530800F324D4 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5E425E4530800F324D4 /* CategoryType.swift */; };
+		0937C5EE25E455B000F324D4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5ED25E455B000F324D4 /* Reachability.swift */; };
+		66B21626A73CFBF7FFD86A10 /* Pods_OmdbChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0937C58F25E4436700F324D4 /* OmdbChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmdbChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0937C59225E4436800F324D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0937C59425E4436800F324D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0937C59625E4436800F324D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0937C59925E4436800F324D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0937C59B25E4436A00F324D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0937C59E25E4436A00F324D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0937C5A025E4436A00F324D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0937C5B225E446EF00F324D4 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0937C5B725E4473100F324D4 /* UIStoryboard+ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewControllers.swift"; sourceTree = "<group>"; };
+		0937C5BA25E4476300F324D4 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
+		0937C5BD25E4477E00F324D4 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		0937C5C025E447A400F324D4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0937C5C325E447C000F324D4 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		0937C5C625E447E300F324D4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0937C5CE25E44AA600F324D4 /* StartingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingApp.swift; sourceTree = "<group>"; };
+		0937C5D425E44FA100F324D4 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		0937C5D825E44FDA00F324D4 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		0937C5DB25E4502C00F324D4 /* SearchManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManagementVC.swift; sourceTree = "<group>"; };
+		0937C5DE25E452B000F324D4 /* AlamofireErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireErrorHandler.swift; sourceTree = "<group>"; };
+		0937C5E125E452E700F324D4 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		0937C5E425E4530800F324D4 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		0937C5ED25E455B000F324D4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2F70AFAED8B20D467A02657C /* Pods-OmdbChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.debug.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmdbChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE77CACBE197403D439D31D /* Pods-OmdbChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.release.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B21626A73CFBF7FFD86A10 /* Pods_OmdbChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +73,8 @@
 			children = (
 				0937C59125E4436700F324D4 /* OmdbChallenge */,
 				0937C59025E4436700F324D4 /* Products */,
+				CACA0BDC0DD624613B0108AB /* Pods */,
+				E142D3086636F9B1C8AB7DFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,141 @@
 		0937C59125E4436700F324D4 /* OmdbChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				0937C59225E4436800F324D4 /* AppDelegate.swift */,
-				0937C59425E4436800F324D4 /* SceneDelegate.swift */,
-				0937C59625E4436800F324D4 /* ViewController.swift */,
-				0937C59825E4436800F324D4 /* Main.storyboard */,
+				0937C5A925E4461D00F324D4 /* Application */,
+				0937C5AA25E4462800F324D4 /* Storyboards */,
+				0937C5AB25E4463900F324D4 /* Scenes */,
+				0937C5AD25E4464900F324D4 /* Models */,
+				0937C5AC25E4464200F324D4 /* Networking */,
+				0937C5AE25E4465200F324D4 /* Helpers */,
+				0937C5AF25E4465600F324D4 /* Utilities */,
+				0937C5B025E4465F00F324D4 /* Localizables */,
+				0937C5B125E4466500F324D4 /* Plists */,
 				0937C59B25E4436A00F324D4 /* Assets.xcassets */,
-				0937C59D25E4436A00F324D4 /* LaunchScreen.storyboard */,
-				0937C5A025E4436A00F324D4 /* Info.plist */,
 			);
 			path = OmdbChallenge;
+			sourceTree = "<group>";
+		};
+		0937C5A925E4461D00F324D4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0937C59225E4436800F324D4 /* AppDelegate.swift */,
+				0937C5CE25E44AA600F324D4 /* StartingApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0937C5AA25E4462800F324D4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0937C59825E4436800F324D4 /* Main.storyboard */,
+				0937C59D25E4436A00F324D4 /* LaunchScreen.storyboard */,
+				0937C5B725E4473100F324D4 /* UIStoryboard+ViewControllers.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0937C5AB25E4463900F324D4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5D125E44AAE00F324D4 /* Splash */,
+				0937C5D225E44AB700F324D4 /* SearchManagement */,
+				0937C5D325E44AC200F324D4 /* MovieDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0937C5AC25E4464200F324D4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5DE25E452B000F324D4 /* AlamofireErrorHandler.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0937C5AD25E4464900F324D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5E125E452E700F324D4 /* SearchResult.swift */,
+				0937C5E425E4530800F324D4 /* CategoryType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0937C5AE25E4465200F324D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5BA25E4476300F324D4 /* UIView+Inspectables.swift */,
+				0937C5C025E447A400F324D4 /* UIColor+Extension.swift */,
+				0937C5C325E447C000F324D4 /* URL+Extensions.swift */,
+				0937C5C625E447E300F324D4 /* String+Extensions.swift */,
+				0937C5D425E44FA100F324D4 /* UILabel+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0937C5AF25E4465600F324D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5BD25E4477E00F324D4 /* Font.swift */,
+				0937C5ED25E455B000F324D4 /* Reachability.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0937C5B025E4465F00F324D4 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5B225E446EF00F324D4 /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		0937C5B125E4466500F324D4 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5A025E4436A00F324D4 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		0937C5D125E44AAE00F324D4 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5D825E44FDA00F324D4 /* SplashVC.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0937C5D225E44AB700F324D4 /* SearchManagement */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5DB25E4502C00F324D4 /* SearchManagementVC.swift */,
+			);
+			path = SearchManagement;
+			sourceTree = "<group>";
+		};
+		0937C5D325E44AC200F324D4 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		CACA0BDC0DD624613B0108AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F70AFAED8B20D467A02657C /* Pods-OmdbChallenge.debug.xcconfig */,
+				DEE77CACBE197403D439D31D /* Pods-OmdbChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E142D3086636F9B1C8AB7DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0937C5A325E4436A00F324D4 /* Build configuration list for PBXNativeTarget "OmdbChallenge" */;
 			buildPhases = (
+				D30DCD92D18217B76693B701 /* [CP] Check Pods Manifest.lock */,
 				0937C58B25E4436700F324D4 /* Sources */,
 				0937C58C25E4436700F324D4 /* Frameworks */,
 				0937C58D25E4436700F324D4 /* Resources */,
+				D5CEC1A2EBA66E244AE258FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0937C59F25E4436A00F324D4 /* LaunchScreen.storyboard in Resources */,
+				0937C5B325E446EF00F324D4 /* Localizable.strings in Resources */,
 				0937C59C25E4436A00F324D4 /* Assets.xcassets in Resources */,
 				0937C59A25E4436800F324D4 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +294,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D30DCD92D18217B76693B701 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmdbChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CEC1A2EBA66E244AE258FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0937C58B25E4436700F324D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0937C59725E4436800F324D4 /* ViewController.swift in Sources */,
+				0937C5BE25E4477E00F324D4 /* Font.swift in Sources */,
+				0937C5DC25E4502C00F324D4 /* SearchManagementVC.swift in Sources */,
+				0937C5DF25E452B000F324D4 /* AlamofireErrorHandler.swift in Sources */,
+				0937C5D925E44FDA00F324D4 /* SplashVC.swift in Sources */,
+				0937C5CF25E44AA600F324D4 /* StartingApp.swift in Sources */,
+				0937C5C725E447E300F324D4 /* String+Extensions.swift in Sources */,
+				0937C5D525E44FA100F324D4 /* UILabel+Extensions.swift in Sources */,
+				0937C5E225E452E700F324D4 /* SearchResult.swift in Sources */,
+				0937C5EE25E455B000F324D4 /* Reachability.swift in Sources */,
+				0937C5C425E447C000F324D4 /* URL+Extensions.swift in Sources */,
 				0937C59325E4436800F324D4 /* AppDelegate.swift in Sources */,
-				0937C59525E4436800F324D4 /* SceneDelegate.swift in Sources */,
+				0937C5B825E4473100F324D4 /* UIStoryboard+ViewControllers.swift in Sources */,
+				0937C5BB25E4476300F324D4 /* UIView+Inspectables.swift in Sources */,
+				0937C5C125E447A400F324D4 /* UIColor+Extension.swift in Sources */,
+				0937C5E525E4530800F324D4 /* CategoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +499,14 @@
 		};
 		0937C5A425E4436A00F324D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F70AFAED8B20D467A02657C /* Pods-OmdbChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTP2RB274M;
-				INFOPLIST_FILE = OmdbChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OmdbChallenge/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +514,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app.OmdbChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0937C5A525E4436A00F324D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE77CACBE197403D439D31D /* Pods-OmdbChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTP2RB274M;
-				INFOPLIST_FILE = OmdbChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OmdbChallenge/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app.OmdbChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

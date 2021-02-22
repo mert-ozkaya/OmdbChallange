@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  OmdbChallenge
+
+  Created by mert ozkaya on 22.02.2021.
+  
+*/
+
+"Language" = "en";
+"ConnectionError" = "Connection Error";
+"ConnectionErrorDescription" = "Please check your internet connection and try again.";
