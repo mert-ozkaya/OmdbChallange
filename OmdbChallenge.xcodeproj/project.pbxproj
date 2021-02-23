@@ -26,6 +26,7 @@
 		0937C5E225E452E700F324D4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5E125E452E700F324D4 /* SearchResult.swift */; };
 		0937C5E525E4530800F324D4 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5E425E4530800F324D4 /* CategoryType.swift */; };
 		0937C5EE25E455B000F324D4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5ED25E455B000F324D4 /* Reachability.swift */; };
+		0937C61625E58A7D00F324D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0937C61525E58A7D00F324D4 /* GoogleService-Info.plist */; };
 		66B21626A73CFBF7FFD86A10 /* Pods_OmdbChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		0937C5E125E452E700F324D4 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		0937C5E425E4530800F324D4 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		0937C5ED25E455B000F324D4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		0937C61525E58A7D00F324D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F70AFAED8B20D467A02657C /* Pods-OmdbChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.debug.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmdbChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE77CACBE197403D439D31D /* Pods-OmdbChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.release.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0937C5A025E4436A00F324D4 /* Info.plist */,
+				0937C61525E58A7D00F324D4 /* GoogleService-Info.plist */,
 			);
 			path = Plists;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				0937C59F25E4436A00F324D4 /* LaunchScreen.storyboard in Resources */,
 				0937C5B325E446EF00F324D4 /* Localizable.strings in Resources */,
+				0937C61625E58A7D00F324D4 /* GoogleService-Info.plist in Resources */,
 				0937C59C25E4436A00F324D4 /* Assets.xcassets in Resources */,
 				0937C59A25E4436800F324D4 /* Main.storyboard in Resources */,
 			);
@@ -504,14 +508,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HTP2RB274M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/OmdbChallenge/Plists/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app.OmdbChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -525,14 +529,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HTP2RB274M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/OmdbChallenge/Plists/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app.OmdbChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omdbchallenge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

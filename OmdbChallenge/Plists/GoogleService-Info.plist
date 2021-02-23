@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>278551599614-hr5h5f2o28duoienbo8k4f4415big575.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.278551599614-hr5h5f2o28duoienbo8k4f4415big575</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAyo4cStx6TGyIxf3kw1ypN8_3Tj2IT3Vw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>278551599614</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.omdbchallenge.app</string>
+	<key>PROJECT_ID</key>
+	<string>omdbchallenge</string>
+	<key>STORAGE_BUCKET</key>
+	<string>omdbchallenge.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:278551599614:ios:84df0693186c9ca28ac8af</string>
+</dict>
+</plist>

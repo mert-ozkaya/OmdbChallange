@@ -19,21 +19,19 @@ final class StartingApp {
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.shadowOffset = CGSize(width: 1, height: 1)
-        navigationController.navigationBar.shadowColor = DesignHelper.shared.specialPurple
         navigationController.navigationBar.shadowOpacity = 1.0
         return navigationController
     }
     
 
     func startInterface(_ window: UIWindow) {
-        let searchManagementNavController = navigationController
-        let searchManagementVC = UIStoryboard.main.searchManagementVC
-        searchManagementVC.view.backgroundColor = .black
-        searchManagementVC.navigationItem.titleView = defaultNavigationLabel("Repositories")
+        let splashNavigationController = navigationController
+        let splashVC = UIStoryboard.main.splashVC
+        splashVC.view.backgroundColor = .black
+//        splashVC.navigationItem.titleView = UILabel.defaultNavigationTitleView(withTitle: "Splash")
         
-
-        window.rootViewController = searchManagementNavController
+        window.rootViewController = splashNavigationController
         window.makeKeyAndVisible()
-        searchManagementNavController.show(searchManagementVC, sender: nil)
+        splashNavigationController.show(splashVC, sender: nil)
     }
 }

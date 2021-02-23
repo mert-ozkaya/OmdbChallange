@@ -5,5 +5,10 @@ target 'OmdbChallenge' do
   
   pod 'Alamofire', '~> 5.2'
   pod 'SDWebImage', '~> 5.0.0'
-
+  
+  #--- Firebase ---#
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
+  ## ------------- ##
 end
