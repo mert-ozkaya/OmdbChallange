@@ -43,6 +43,48 @@
             </objects>
             <point key="canvasLocation" x="138" y="82"/>
         </scene>
+        <!--Search ManagementVC-->
+        <scene sceneID="a7o-Il-jdp">
+            <objects>
+                <viewController storyboardIdentifier="SearchManagementVC" id="cTa-sT-cgM" customClass="SearchManagementVC" customModule="OmdbChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4c-2x-30D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-XP-PnB">
+                                <rect key="frame" x="20" y="54" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-N8-b6w">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cTa-sT-cgM" id="ge4-qw-tnE"/>
+                                    <outlet property="delegate" destination="cTa-sT-cgM" id="cWi-eX-A2m"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gwb-zZ-Hju"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fxb-XP-PnB" firstAttribute="top" secondItem="Gwb-zZ-Hju" secondAttribute="top" constant="10" id="2Hy-Bt-61b"/>
+                            <constraint firstItem="PpU-N8-b6w" firstAttribute="top" secondItem="fxb-XP-PnB" secondAttribute="bottom" constant="10" id="9wU-Ks-6HS"/>
+                            <constraint firstItem="fxb-XP-PnB" firstAttribute="leading" secondItem="Gwb-zZ-Hju" secondAttribute="leading" constant="20" id="aKl-Qe-nrN"/>
+                            <constraint firstItem="Gwb-zZ-Hju" firstAttribute="bottom" secondItem="PpU-N8-b6w" secondAttribute="bottom" id="j67-dD-d4z"/>
+                            <constraint firstItem="Gwb-zZ-Hju" firstAttribute="trailing" secondItem="fxb-XP-PnB" secondAttribute="trailing" constant="20" id="vZA-pW-vH6"/>
+                            <constraint firstItem="Gwb-zZ-Hju" firstAttribute="trailing" secondItem="PpU-N8-b6w" secondAttribute="trailing" id="vqZ-Qi-6oQ"/>
+                            <constraint firstItem="PpU-N8-b6w" firstAttribute="leading" secondItem="Gwb-zZ-Hju" secondAttribute="leading" id="vxl-ey-ajc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PpU-N8-b6w" id="Uig-sL-0ae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oi6-IH-rH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="67"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

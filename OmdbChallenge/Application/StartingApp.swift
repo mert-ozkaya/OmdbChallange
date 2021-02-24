@@ -28,7 +28,7 @@ final class StartingApp {
         let splashNavigationController = navigationController
         let splashVC = UIStoryboard.main.splashVC
         splashVC.view.backgroundColor = .black
-//        splashVC.navigationItem.titleView = UILabel.defaultNavigationTitleView(withTitle: "Splash")
+        splashVC.splashNavigator = SplashNavigator(navigationController: splashNavigationController, window: window)
         
         window.rootViewController = splashNavigationController
         window.makeKeyAndVisible()

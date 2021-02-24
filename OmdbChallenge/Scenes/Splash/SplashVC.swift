@@ -10,8 +10,12 @@ import FirebaseRemoteConfig
 
 class SplashVC: UIViewController {
 
+    //------ Storyboard ui variables ------
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    //------ Variables  ------
     var remoteConfig: RemoteConfig!
+    var splashNavigator: SplashNavigator!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +86,7 @@ class SplashVC: UIViewController {
             self.welcomeLabel.text = self.remoteConfig["splash_started"].stringValue
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 print("Hadi git artık")
+                self.splashNavigator.navigateToSearcManagement()
             }
         }
     }

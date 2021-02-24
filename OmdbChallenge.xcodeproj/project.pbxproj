@@ -27,6 +27,20 @@
 		0937C5E525E4530800F324D4 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5E425E4530800F324D4 /* CategoryType.swift */; };
 		0937C5EE25E455B000F324D4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937C5ED25E455B000F324D4 /* Reachability.swift */; };
 		0937C61625E58A7D00F324D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0937C61525E58A7D00F324D4 /* GoogleService-Info.plist */; };
+		094FCC1125E6D2DB008DEB37 /* SplashNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC1025E6D2DB008DEB37 /* SplashNavigator.swift */; };
+		094FCC2125E6D51F008DEB37 /* SearchManagementNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC2025E6D51F008DEB37 /* SearchManagementNavigator.swift */; };
+		094FCC2425E6E6ED008DEB37 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC2325E6E6ED008DEB37 /* AppConfig.swift */; };
+		094FCC2725E6E73A008DEB37 /* AlamofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC2625E6E73A008DEB37 /* AlamofireClient.swift */; };
+		094FCC2E25E6E794008DEB37 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC2D25E6E794008DEB37 /* Movie.swift */; };
+		094FCC3125E6E7AD008DEB37 /* ApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC3025E6E7AC008DEB37 /* ApiResponses.swift */; };
+		094FCC3425E6E829008DEB37 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC3325E6E829008DEB37 /* API.swift */; };
+		094FCC3925E6E872008DEB37 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC3725E6E872008DEB37 /* SearchResultCell.swift */; };
+		094FCC3A25E6E872008DEB37 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094FCC3825E6E872008DEB37 /* SearchResultCell.xib */; };
+		094FCC3E25E6E93E008DEB37 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC3D25E6E93E008DEB37 /* UITableView+Extensions.swift */; };
+		094FCC4225E6EA0B008DEB37 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC4125E6EA0B008DEB37 /* UIImageView+Extensions.swift */; };
+		094FCC4525E6ED31008DEB37 /* Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC4425E6ED31008DEB37 /* Throttle.swift */; };
+		094FCC4A25E6F263008DEB37 /* ThrottledTextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC4925E6F263008DEB37 /* ThrottledTextFieldValidator.swift */; };
+		094FCC4E25E6F4E6008DEB37 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FCC4D25E6F4E6008DEB37 /* SearchResultViewModel.swift */; };
 		66B21626A73CFBF7FFD86A10 /* Pods_OmdbChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +67,20 @@
 		0937C5E425E4530800F324D4 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		0937C5ED25E455B000F324D4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0937C61525E58A7D00F324D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		094FCC1025E6D2DB008DEB37 /* SplashNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashNavigator.swift; sourceTree = "<group>"; };
+		094FCC2025E6D51F008DEB37 /* SearchManagementNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManagementNavigator.swift; sourceTree = "<group>"; };
+		094FCC2325E6E6ED008DEB37 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		094FCC2625E6E73A008DEB37 /* AlamofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireClient.swift; sourceTree = "<group>"; };
+		094FCC2D25E6E794008DEB37 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		094FCC3025E6E7AC008DEB37 /* ApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponses.swift; sourceTree = "<group>"; };
+		094FCC3325E6E829008DEB37 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		094FCC3725E6E872008DEB37 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		094FCC3825E6E872008DEB37 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		094FCC3D25E6E93E008DEB37 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		094FCC4125E6EA0B008DEB37 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		094FCC4425E6ED31008DEB37 /* Throttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttle.swift; sourceTree = "<group>"; };
+		094FCC4925E6F263008DEB37 /* ThrottledTextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottledTextFieldValidator.swift; sourceTree = "<group>"; };
+		094FCC4D25E6F4E6008DEB37 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
 		2F70AFAED8B20D467A02657C /* Pods-OmdbChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.debug.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5D927CBD4826CF53405DAE /* Pods_OmdbChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmdbChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE77CACBE197403D439D31D /* Pods-OmdbChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbChallenge.release.xcconfig"; path = "Target Support Files/Pods-OmdbChallenge/Pods-OmdbChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,11 +124,13 @@
 				0937C5AB25E4463900F324D4 /* Scenes */,
 				0937C5AD25E4464900F324D4 /* Models */,
 				0937C5AC25E4464200F324D4 /* Networking */,
+				094FCC3C25E6E91E008DEB37 /* Extensions */,
 				0937C5AE25E4465200F324D4 /* Helpers */,
 				0937C5AF25E4465600F324D4 /* Utilities */,
 				0937C5B025E4465F00F324D4 /* Localizables */,
 				0937C5B125E4466500F324D4 /* Plists */,
 				0937C59B25E4436A00F324D4 /* Assets.xcassets */,
+				094FCC2325E6E6ED008DEB37 /* AppConfig.swift */,
 			);
 			path = OmdbChallenge;
 			sourceTree = "<group>";
@@ -138,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				0937C5DE25E452B000F324D4 /* AlamofireErrorHandler.swift */,
+				094FCC2625E6E73A008DEB37 /* AlamofireClient.swift */,
+				094FCC3025E6E7AC008DEB37 /* ApiResponses.swift */,
+				094FCC3325E6E829008DEB37 /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -147,6 +180,7 @@
 			children = (
 				0937C5E125E452E700F324D4 /* SearchResult.swift */,
 				0937C5E425E4530800F324D4 /* CategoryType.swift */,
+				094FCC2D25E6E794008DEB37 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,10 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				0937C5BA25E4476300F324D4 /* UIView+Inspectables.swift */,
-				0937C5C025E447A400F324D4 /* UIColor+Extension.swift */,
-				0937C5C325E447C000F324D4 /* URL+Extensions.swift */,
-				0937C5C625E447E300F324D4 /* String+Extensions.swift */,
-				0937C5D425E44FA100F324D4 /* UILabel+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -168,6 +198,7 @@
 			children = (
 				0937C5BD25E4477E00F324D4 /* Font.swift */,
 				0937C5ED25E455B000F324D4 /* Reachability.swift */,
+				094FCC4425E6ED31008DEB37 /* Throttle.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				0937C5D825E44FDA00F324D4 /* SplashVC.swift */,
+				094FCC1025E6D2DB008DEB37 /* SplashNavigator.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -200,7 +232,11 @@
 		0937C5D225E44AB700F324D4 /* SearchManagement */ = {
 			isa = PBXGroup;
 			children = (
+				094FCC4825E6F248008DEB37 /* Utils */,
+				094FCC3625E6E860008DEB37 /* Views */,
 				0937C5DB25E4502C00F324D4 /* SearchManagementVC.swift */,
+				094FCC4D25E6F4E6008DEB37 /* SearchResultViewModel.swift */,
+				094FCC2025E6D51F008DEB37 /* SearchManagementNavigator.swift */,
 			);
 			path = SearchManagement;
 			sourceTree = "<group>";
@@ -210,6 +246,36 @@
 			children = (
 			);
 			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		094FCC3625E6E860008DEB37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				094FCC3725E6E872008DEB37 /* SearchResultCell.swift */,
+				094FCC3825E6E872008DEB37 /* SearchResultCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094FCC3C25E6E91E008DEB37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0937C5C025E447A400F324D4 /* UIColor+Extension.swift */,
+				0937C5C325E447C000F324D4 /* URL+Extensions.swift */,
+				0937C5C625E447E300F324D4 /* String+Extensions.swift */,
+				0937C5D425E44FA100F324D4 /* UILabel+Extensions.swift */,
+				094FCC3D25E6E93E008DEB37 /* UITableView+Extensions.swift */,
+				094FCC4125E6EA0B008DEB37 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		094FCC4825E6F248008DEB37 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				094FCC4925E6F263008DEB37 /* ThrottledTextFieldValidator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CACA0BDC0DD624613B0108AB /* Pods */ = {
@@ -292,6 +358,7 @@
 				0937C5B325E446EF00F324D4 /* Localizable.strings in Resources */,
 				0937C61625E58A7D00F324D4 /* GoogleService-Info.plist in Resources */,
 				0937C59C25E4436A00F324D4 /* Assets.xcassets in Resources */,
+				094FCC3A25E6E872008DEB37 /* SearchResultCell.xib in Resources */,
 				0937C59A25E4436800F324D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,18 +412,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094FCC3425E6E829008DEB37 /* API.swift in Sources */,
 				0937C5BE25E4477E00F324D4 /* Font.swift in Sources */,
 				0937C5DC25E4502C00F324D4 /* SearchManagementVC.swift in Sources */,
+				094FCC3E25E6E93E008DEB37 /* UITableView+Extensions.swift in Sources */,
+				094FCC2125E6D51F008DEB37 /* SearchManagementNavigator.swift in Sources */,
 				0937C5DF25E452B000F324D4 /* AlamofireErrorHandler.swift in Sources */,
 				0937C5D925E44FDA00F324D4 /* SplashVC.swift in Sources */,
+				094FCC4E25E6F4E6008DEB37 /* SearchResultViewModel.swift in Sources */,
 				0937C5CF25E44AA600F324D4 /* StartingApp.swift in Sources */,
 				0937C5C725E447E300F324D4 /* String+Extensions.swift in Sources */,
+				094FCC1125E6D2DB008DEB37 /* SplashNavigator.swift in Sources */,
+				094FCC4225E6EA0B008DEB37 /* UIImageView+Extensions.swift in Sources */,
+				094FCC4A25E6F263008DEB37 /* ThrottledTextFieldValidator.swift in Sources */,
 				0937C5D525E44FA100F324D4 /* UILabel+Extensions.swift in Sources */,
+				094FCC2425E6E6ED008DEB37 /* AppConfig.swift in Sources */,
+				094FCC4525E6ED31008DEB37 /* Throttle.swift in Sources */,
 				0937C5E225E452E700F324D4 /* SearchResult.swift in Sources */,
+				094FCC3925E6E872008DEB37 /* SearchResultCell.swift in Sources */,
+				094FCC3125E6E7AD008DEB37 /* ApiResponses.swift in Sources */,
 				0937C5EE25E455B000F324D4 /* Reachability.swift in Sources */,
 				0937C5C425E447C000F324D4 /* URL+Extensions.swift in Sources */,
 				0937C59325E4436800F324D4 /* AppDelegate.swift in Sources */,
+				094FCC2E25E6E794008DEB37 /* Movie.swift in Sources */,
 				0937C5B825E4473100F324D4 /* UIStoryboard+ViewControllers.swift in Sources */,
+				094FCC2725E6E73A008DEB37 /* AlamofireClient.swift in Sources */,
 				0937C5BB25E4476300F324D4 /* UIView+Inspectables.swift in Sources */,
 				0937C5C125E447A400F324D4 /* UIColor+Extension.swift in Sources */,
 				0937C5E525E4530800F324D4 /* CategoryType.swift in Sources */,
