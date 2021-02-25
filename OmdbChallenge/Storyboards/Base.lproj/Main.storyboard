@@ -78,12 +78,47 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchTextField" destination="fxb-XP-PnB" id="4MU-q2-yhF"/>
                         <outlet property="tableView" destination="PpU-N8-b6w" id="Uig-sL-0ae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oi6-IH-rH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947" y="67"/>
+        </scene>
+        <!--Movie DetailsVC-->
+        <scene sceneID="xib-AH-EIU">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsVC" id="JJ4-9Z-a0N" customClass="MovieDetailsVC" customModule="OmdbChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Obo-Eh-5OA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-b0-sZL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JJ4-9Z-a0N" id="njE-RQ-Dfp"/>
+                                    <outlet property="delegate" destination="JJ4-9Z-a0N" id="8gI-Hb-fwH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pjz-Yr-fal"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pjz-Yr-fal" firstAttribute="bottom" secondItem="b4I-b0-sZL" secondAttribute="bottom" id="35X-AO-IgJ"/>
+                            <constraint firstItem="b4I-b0-sZL" firstAttribute="top" secondItem="Pjz-Yr-fal" secondAttribute="top" id="70z-BY-ANa"/>
+                            <constraint firstItem="b4I-b0-sZL" firstAttribute="leading" secondItem="Pjz-Yr-fal" secondAttribute="leading" id="76e-4g-XrP"/>
+                            <constraint firstItem="Pjz-Yr-fal" firstAttribute="trailing" secondItem="b4I-b0-sZL" secondAttribute="trailing" id="v3v-rU-yJS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="b4I-b0-sZL" id="1gs-NJ-TKZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgq-Rn-Pa6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="78"/>
         </scene>
     </scenes>
     <resources>

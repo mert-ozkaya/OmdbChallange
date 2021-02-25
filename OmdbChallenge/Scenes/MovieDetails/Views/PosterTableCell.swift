@@ -9,15 +9,15 @@ import UIKit
 
 class PosterTableCell: UITableViewCell {
 
+    @IBOutlet private weak var posterImgView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    func configure(withImageUrl url: String?) {
+        if let url = url {
+            posterImgView.setImage(with: url)
+        }
+    }
 }

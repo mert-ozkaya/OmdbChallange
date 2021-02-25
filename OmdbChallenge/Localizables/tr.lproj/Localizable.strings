@@ -6,8 +6,8 @@
   
 */
 
-"Language" = "en";
-"ConnectionError" = "Connection Error";
-"ConnectionErrorDescription" = "Please check your internet connection and try again.";
-"Search" = "Search";
-"Details" = "Details";
+"Language" = "tr";
+"ConnectionError" = "Bağlantı Hatası";
+"ConnectionErrorDescription" = "Lütfen internetinizi kontrol edip tekrar deneyin.";
+"Search" = "Arama";
+"Details" = "Detaylar";

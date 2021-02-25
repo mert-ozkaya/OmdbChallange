@@ -27,4 +27,11 @@ extension UIStoryboard {
         }
         return viewController
     }
+    
+    var movieDetails: MovieDetailsVC {
+        guard let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "MovieDetailsVC") as? MovieDetailsVC else {
+            fatalError("MovieDetailsVC not found in Main.storyboard")
+        }
+        return viewController
+    }
 }

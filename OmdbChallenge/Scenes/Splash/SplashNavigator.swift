@@ -30,9 +30,6 @@ final class SplashNavigator: SplashNavigatable {
         searchManagementVC.navigationItem.titleView = UILabel.defaultNavigationTitleView(withTitle: "Search".localized)
         searchManagementVC.navigationItem.hidesBackButton = true
         self.navigationController.pushViewController(searchManagementVC, animated: true)
-//        self.window.rootViewController = self.navigationController
-//        self.window.makeKeyAndVisible()
-//        navigationController.show(searchManagementVC, sender: nil)
     }
 
 }
