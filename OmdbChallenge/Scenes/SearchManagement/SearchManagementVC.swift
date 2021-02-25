@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SearchManagementDelegate {
+    func changedData()
+}
+
 final class SearchManagementVC: UIViewController {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -19,19 +23,14 @@ final class SearchManagementVC: UIViewController {
             tableView.register(withCellType: SearchResultCell.self)
         }
     }
-    
-    private var searchResults: [SearchResult] = [SearchResult]() {
-        didSet {
-            self.tableView.reloadData()
-        }
-    }
-    
+
     var searchManagementNavigator: SearchManagementNavigator!
     private let validator = ThrottledTextFieldValidator()
-    private let api = API()
+    private var searchResultViewModel: SeaarchResultViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchResultViewModel = SeaarchResultViewModel(delegate: self)
         setupUI()
     }
     
@@ -43,15 +42,47 @@ final class SearchManagementVC: UIViewController {
         didChangeSearchQuery(textField.text ?? "")
     }
     
-    private func didChangeSearchQuery(_ query: String) {
+    func didChangeSearchQuery(_ query: String) {
         validator.validate(query: query) { [weak self] query in
             guard let strongSelf = self,
                 let query = query else { return }
-            strongSelf.fetchSearchResults(forQuery: query)
+            strongSelf.searchResultViewModel.removeAllSearchResults()
+            strongSelf.searchResultViewModel.fetchSearchResults(forQuery: query)
+        }
+    }
+}
+
+extension SearchManagementVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return searchResultViewModel.getSearchResults().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell") as? SearchResultCell else {
+            fatalError("SearchResultCell not found")
+        }
+        let searchResults = searchResultViewModel.getSearchResults()
+        cell.configure(withSearchResult: searchResults[indexPath.row])
+        return cell
+    }
+}
+
+extension SearchManagementVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let searchResults = searchResultViewModel.getSearchResults()
+        if searchResults.count - 6 < indexPath.row {
+            searchResultViewModel.fetchSearchResults(forQuery: searchTextField.text ?? "")
         }
     }
     
-    func fetchSearchResults(forQuery query: String) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let searchResults = searchResultViewModel.getSearchResults()
+        searchManagementNavigator.navigateToMovieDetails(searchResults[indexPath.row].imdbID)
     }
+}
 
+extension SearchManagementVC: SearchManagementDelegate {
+    func changedData() {
+        self.tableView.reloadData()
+    }
 }

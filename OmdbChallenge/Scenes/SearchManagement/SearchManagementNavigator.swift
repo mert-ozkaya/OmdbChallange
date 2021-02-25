@@ -20,8 +20,12 @@ final class SearchManagementNavigator: SearchManagementNavigatable {
     }
     
     func navigateToMovieDetails(_ id: String) {
-        let searchManagementVC = UIStoryboard.main.searchManagementVC
-        navigationController.pushViewController(searchManagementVC, animated: true)
+        let movieDetailsVC = UIStoryboard.main.movieDetails
+        movieDetailsVC.imdbID = id
+        movieDetailsVC.movieDetailsNavigator = MovieDetailsNavigator(navigationController: self.navigationController)
+        movieDetailsVC.navigationItem.titleView = UILabel.defaultNavigationTitleView(withTitle: "Details".localized)
+        movieDetailsVC.view.backgroundColor = .black
+        navigationController.pushViewController(movieDetailsVC, animated: true)
     }
 
 }

@@ -9,18 +9,26 @@ import Foundation
 
 final class SeaarchResultViewModel {
     private var page: Int = 0
-    private var isLastPage: Bool = false
-    private var totalResults: Int = 0
+    private var endOfData: Bool = false
+    private var totalResults: String = "0"
     private var searchResults = [SearchResult]()
+    private var isFetchingData = false
+    private let api: API
     
-    init(response: SearchResponse) {
-        self.totalResults = response.totalResults
-        self.searchResults = response.search
+    let searchManagementDelegate: SearchManagementDelegate
+    
+    init(api: API = API(), delegate: SearchManagementDelegate) {
+        self.api = api
+        self.searchManagementDelegate = delegate
     }
     
-    func getNewPage() -> Int {
-        self.page += 1
-        return self.page
+    func getNewPage() -> Int? {
+        if !self.endOfData && !isFetchingData {
+            self.page += 1
+            return self.page
+        } else {
+            return nil
+        }
     }
     
     func getSearchResults() -> [SearchResult] {
@@ -29,7 +37,38 @@ final class SeaarchResultViewModel {
     
     func addDataForNewPage(searchResponse: SearchResponse) {
         self.totalResults = searchResponse.totalResults
-         
+        self.searchResults.append(contentsOf: searchResponse.search)
+        
+        if String(self.searchResults.count) == self.totalResults {
+            endOfData = true
+        } else {
+            endOfData = false
+        }
     }
     
+    func removeAllSearchResults() {
+        self.searchResults.removeAll()
+        self.page = 0
+        self.endOfData = false
+    }
+    
+    func fetchSearchResults(forQuery query: String) {
+        guard let page = getNewPage() else {
+            return
+        }
+        isFetchingData = true
+        api.searchAll(withQuery: query, page: page) { (response) in
+            guard let searchResponse = response else {
+                self.isFetchingData = false
+                return
+            }
+            self.isFetchingData = false
+            self.addDataForNewPage(searchResponse: searchResponse)
+            self.changedData()
+        }
+    }
+    
+    private func changedData() {
+        self.searchManagementDelegate.changedData()
+    }
 }

@@ -13,7 +13,7 @@ struct MovieResponse: Decodable {
 
 struct SearchResponse: Decodable {
     let search: [SearchResult]
-    let totalResults: Int
+    let totalResults: String
     
     enum CodingKeys: String, CodingKey {
         case search = "Search"
