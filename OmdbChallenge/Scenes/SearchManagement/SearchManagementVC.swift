@@ -77,7 +77,7 @@ extension SearchManagementVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let searchResults = searchResultViewModel.getSearchResults()
-        searchManagementNavigator.navigateToMovieDetails(searchResults[indexPath.row].imdbID)
+        searchManagementNavigator.navigateToMovieDetails(searchResults[indexPath.row])
     }
 }
 

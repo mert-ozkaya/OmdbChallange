@@ -22,7 +22,6 @@ final class StartingApp {
         navigationController.navigationBar.shadowOpacity = 1.0
         return navigationController
     }
-    
 
     func startInterface(_ window: UIWindow) {
         let splashNavigationController = navigationController
