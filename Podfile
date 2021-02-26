@@ -11,4 +11,7 @@ target 'OmdbChallenge' do
   pod 'Firebase/Analytics'
   pod 'Firebase/RemoteConfig'
   ## ------------- ##
+  
+  pod 'SVProgressHUD', '~> 2.2.0'
+
 end

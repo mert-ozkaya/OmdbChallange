@@ -11,3 +11,4 @@
 "ConnectionErrorDescription" = "Lütfen internetinizi kontrol edip tekrar deneyin.";
 "Search" = "Arama";
 "Details" = "Detaylar";
+"ResultsNotFound" = "Arama sonucu bulunamadı.";

@@ -12,11 +12,15 @@ struct MovieResponse: Decodable {
 }
 
 struct SearchResponse: Decodable {
-    let search: [SearchResult]
-    let totalResults: String
+    let search: [SearchResult]?
+    let totalResults: String?
+    let error: String?
+    let response: String?
     
     enum CodingKeys: String, CodingKey {
         case search = "Search"
         case totalResults
+        case error = "Error"
+        case response = "Response"
     }
 }

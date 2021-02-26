@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 final class SeaarchResultViewModel {
     private var page: Int = 0
@@ -36,8 +37,8 @@ final class SeaarchResultViewModel {
     }
     
     func addDataForNewPage(searchResponse: SearchResponse) {
-        self.totalResults = searchResponse.totalResults
-        self.searchResults.append(contentsOf: searchResponse.search)
+        self.totalResults = searchResponse.totalResults ?? "0"
+        self.searchResults.append(contentsOf: searchResponse.search ?? [])
         
         if String(self.searchResults.count) == self.totalResults {
             endOfData = true
@@ -57,12 +58,15 @@ final class SeaarchResultViewModel {
             return
         }
         isFetchingData = true
+        SVProgressHUD.show()
         api.searchAll(withQuery: query, page: page) { (response) in
             guard let searchResponse = response else {
                 self.isFetchingData = false
+                SVProgressHUD.dismiss()
                 return
             }
             self.isFetchingData = false
+            SVProgressHUD.dismiss()
             self.addDataForNewPage(searchResponse: searchResponse)
             self.changedData()
         }

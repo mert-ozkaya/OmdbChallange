@@ -23,10 +23,11 @@ final class AlamofireClient: AlamofireClientProvider {
            .responseJSON { (response) in
                switch response.result{
                case .success:
-                    print("AlamofireClient::get()::Successful")
                     completion(response.data)
                case .failure(let error):
+                #if DEBUG
                     print("AlamofireClient::get()::", AlamofireErrorHandler(error).errorFilter())
+                #endif
                     completion(nil)
                }
        }

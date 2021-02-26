@@ -64,20 +64,31 @@
                                     <outlet property="delegate" destination="cTa-sT-cgM" id="cWi-eX-A2m"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foQ-iU-kYo">
+                                <rect key="frame" x="20" y="432.5" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.72549019609999998" blue="0.035294117649999998" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gwb-zZ-Hju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="foQ-iU-kYo" firstAttribute="leading" secondItem="Gwb-zZ-Hju" secondAttribute="leading" constant="20" id="2Ga-2c-tGc"/>
                             <constraint firstItem="fxb-XP-PnB" firstAttribute="top" secondItem="Gwb-zZ-Hju" secondAttribute="top" constant="10" id="2Hy-Bt-61b"/>
                             <constraint firstItem="PpU-N8-b6w" firstAttribute="top" secondItem="fxb-XP-PnB" secondAttribute="bottom" constant="10" id="9wU-Ks-6HS"/>
+                            <constraint firstItem="foQ-iU-kYo" firstAttribute="centerY" secondItem="a4c-2x-30D" secondAttribute="centerY" id="Plo-yn-oDf"/>
+                            <constraint firstItem="foQ-iU-kYo" firstAttribute="centerX" secondItem="a4c-2x-30D" secondAttribute="centerX" id="Rf0-lF-q95"/>
                             <constraint firstItem="fxb-XP-PnB" firstAttribute="leading" secondItem="Gwb-zZ-Hju" secondAttribute="leading" constant="20" id="aKl-Qe-nrN"/>
                             <constraint firstItem="Gwb-zZ-Hju" firstAttribute="bottom" secondItem="PpU-N8-b6w" secondAttribute="bottom" id="j67-dD-d4z"/>
                             <constraint firstItem="Gwb-zZ-Hju" firstAttribute="trailing" secondItem="fxb-XP-PnB" secondAttribute="trailing" constant="20" id="vZA-pW-vH6"/>
                             <constraint firstItem="Gwb-zZ-Hju" firstAttribute="trailing" secondItem="PpU-N8-b6w" secondAttribute="trailing" id="vqZ-Qi-6oQ"/>
                             <constraint firstItem="PpU-N8-b6w" firstAttribute="leading" secondItem="Gwb-zZ-Hju" secondAttribute="leading" id="vxl-ey-ajc"/>
+                            <constraint firstItem="Gwb-zZ-Hju" firstAttribute="trailing" secondItem="foQ-iU-kYo" secondAttribute="trailing" constant="20" id="yfH-u9-19S"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultInfoLabel" destination="foQ-iU-kYo" id="Cxc-Ts-3ZL"/>
                         <outlet property="searchTextField" destination="fxb-XP-PnB" id="4MU-q2-yhF"/>
                         <outlet property="tableView" destination="PpU-N8-b6w" id="Uig-sL-0ae"/>
                     </connections>

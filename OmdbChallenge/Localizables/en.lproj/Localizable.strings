@@ -11,3 +11,4 @@
 "ConnectionErrorDescription" = "Please check your internet connection and try again.";
 "Search" = "Search";
 "Details" = "Details";
+"ResultsNotFound" = "Not found search results.";

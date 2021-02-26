@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Configurations
         FirebaseApp.configure()
-
+        setupSVProgressHUD()
+        
         //
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
@@ -27,7 +29,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 
-
+    func setupSVProgressHUD() {
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setBackgroundColor(.clear)
+        SVProgressHUD.setForegroundColor(UIColor(hex: "F0B909"))
+        SVProgressHUD.setRingThickness(6)
+        SVProgressHUD.setFadeInAnimationDuration(0.3)
+        SVProgressHUD.setFadeOutAnimationDuration(0.3)
+        SVProgressHUD.setMinimumSize(CGSize(width: 50, height: 50))
+        SVProgressHUD.setRingNoTextRadius(30)
+        SVProgressHUD.setCornerRadius(16)
+    }
 
 }
 

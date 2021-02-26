@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseRemoteConfig
+import SVProgressHUD
 
 class SplashVC: UIViewController {
 
@@ -19,6 +20,7 @@ class SplashVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SVProgressHUD.show()
         setupUI()
     }
     
@@ -42,11 +44,13 @@ class SplashVC: UIViewController {
             if let controller = self.presentedViewController, controller is UIAlertController {
                 DispatchQueue.main.asyncAfter(deadline: checkoutTime) {
                     self.checkInternetAndSetupRemote()
+                    SVProgressHUD.dismiss()
                 }
             } else {
                 self.present(alert, animated: true) {
                     DispatchQueue.main.asyncAfter(deadline: checkoutTime) {
                         self.checkInternetAndSetupRemote()
+                        SVProgressHUD.dismiss()
                     }
                 }
             }
@@ -83,10 +87,11 @@ class SplashVC: UIViewController {
     
     func displayIntroMessage() {
         DispatchQueue.main.async {
-            self.welcomeLabel.text = self.remoteConfig["splash_started"].stringValue
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                print("Hadi git artık")
-                self.splashNavigator.navigateToSearcManagement()
+            SVProgressHUD.dismiss(withDelay: 0.3) {
+                self.welcomeLabel.text = self.remoteConfig["splash_started"].stringValue
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    self.splashNavigator.navigateToSearcManagement()
+                }
             }
         }
     }

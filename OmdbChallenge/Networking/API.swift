@@ -33,12 +33,12 @@ final class API: ApiProvider {
         alamofireClient.get(queries: queries) { (data) in
             guard let data = data,
                 let response = try? JSONDecoder().decode(SearchResponse.self, from: data) else {
-                print("searchAll() response or data is nil")
+                #if DEBUG
+                    print("searchAll() response or data is nil")
+                #endif
                 completion(nil)
                 return
             }
-            
-            print("responsee:", response.search.count)
             completion(response)
         }
     }

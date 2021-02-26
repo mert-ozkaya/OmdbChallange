@@ -18,6 +18,7 @@ final class SearchManagementVC: UIViewController {
     }
     
     @IBOutlet weak private var searchTextField: UITextField!
+    @IBOutlet weak private var resultInfoLabel: UILabel!
     @IBOutlet weak private var tableView: UITableView! {
         didSet {
             tableView.register(withCellType: SearchResultCell.self)
@@ -36,10 +37,16 @@ final class SearchManagementVC: UIViewController {
     
     func setupUI() {
         searchTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        resultInfoLabel.isHidden = true
+        resultInfoLabel.text = "ResultsNotFound".localized
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        didChangeSearchQuery(textField.text ?? "")
+        if let text = textField.text {
+            if text != "" {
+                didChangeSearchQuery(text)
+            }
+        }
     }
     
     func didChangeSearchQuery(_ query: String) {
@@ -84,5 +91,11 @@ extension SearchManagementVC: UITableViewDelegate {
 extension SearchManagementVC: SearchManagementDelegate {
     func changedData() {
         self.tableView.reloadData()
+        if searchResultViewModel.getSearchResults().count > 0 {
+            resultInfoLabel.isHidden = true
+        } else {
+            resultInfoLabel.isHidden = false
+            
+        }
     }
 }
